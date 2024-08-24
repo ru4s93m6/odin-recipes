@@ -2,6 +2,8 @@
 
 This is the first project from The Odin Project course. It's a simple recipe website showcasing basic HTML skills.
 
+[Live Site DEMO](https://ru4s93m6.github.io/odin-recipes/)
+
 ## Project Description
 
 The website currently contains several recipe pages, each structured with semantic HTML. While the page isn't very visually appealing at the moment, CSS will be added in the future to enhance its appearance.
