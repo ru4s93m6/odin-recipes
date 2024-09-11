@@ -1,0 +1,93 @@
+:root {
+  --fs-sm: clamp(0.8rem, 1.27vw + 0.48rem, 1.065rem);
+  --fs-base: clamp(1rem, 1.82vw + 0.55rem, 2rem);
+  --color-primary: #7d4634;
+  --color-background: #f3e5d8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 3%;
+  background-color: var(--color-background);
+  font-family: system-ui;
+}
+
+h1 {
+  text-align: center;
+  font-size: var(--fs-base);
+}
+
+img {
+  border-radius: 0.5rem;
+  width: 100%;
+  object-fit: cover;
+  margin: 1.5ch 0;
+}
+
+.recipe-container {
+  background-color: white;
+  padding: 1.5rem 3.25rem;
+  border-radius: 1rem;
+  max-width: clamp(300px, 80vw, 800px);
+  margin: 3% auto;
+}
+
+figure {
+  width: 100%;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+figure figcaption {
+  font-weight: 300;
+  font-size: var(--fs-sm);
+}
+
+main section:first-child {
+  border-bottom: 2px solid rgb(215, 215, 215);
+}
+
+section {
+  margin: 3ch 0;
+  padding: 3%;
+}
+
+section > h2 {
+  color: var(--color-primary);
+}
+
+ul li,
+ol li {
+  margin: 1ch;
+}
+
+li::marker {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .recipe-container {
+    padding: 1rem;
+  }
+}
+
+@media print {
+  .recipe-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
